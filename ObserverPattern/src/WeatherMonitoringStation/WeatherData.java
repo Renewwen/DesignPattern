@@ -1,17 +1,18 @@
 package WeatherMonitoringStation;
 
+import java.util.ArrayList;
 import java.util.HashSet;
-import java.util.Set;
+import java.util.List;
 
 public class WeatherData implements Subject{
 
     float temperature;
     float humidity;
     float pressure;
-    Set<Observer> observers;
+    List<Observer> observers;
 
     public WeatherData() {
-        observers = new HashSet<>();
+        observers = new ArrayList<>();
     }
 
     @Override

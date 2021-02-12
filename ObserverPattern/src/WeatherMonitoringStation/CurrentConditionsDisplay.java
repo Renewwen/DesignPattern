@@ -23,8 +23,4 @@ public class CurrentConditionsDisplay implements Observer, DisplayElement{
             + " F degrees and " + humidity + "% humidity");
     }
 
-    public void registerToSubject() {
-        weatherData.registerObserver(this);
-    }
-
 }
