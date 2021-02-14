@@ -19,7 +19,7 @@ public class HeatIndexDisplay implements Observer, DisplayElement {
         this.pressure = pressure;
         display();
     }
-
+ 
     @Override
     public void display() {
         heatIndex = computeHeatIndex(temperature, humidity);
